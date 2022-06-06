@@ -6,13 +6,13 @@ public class CiudadHospital {
     public CiudadHospital(String a, String b, String c) {
         ciudad = a;
         provincia = b;
-        direccion = c;
+        dir = c;
   
     }
 
     private String ciudad;
     private String provincia;
-    private String direccion;
+    private String dir;
 
 
     public void establecerCiudad(String a) {
@@ -24,7 +24,7 @@ public class CiudadHospital {
     }
 
     public void establecerDir(String a) {
-        direccion = a;
+        dir = a;
     }
 
 
@@ -37,7 +37,7 @@ public class CiudadHospital {
     }
 
     public String obtenerDir() {
-        return direccion;
+        return dir;
     }
 
 

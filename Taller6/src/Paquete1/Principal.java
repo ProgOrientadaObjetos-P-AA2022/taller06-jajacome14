@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Principal {
 
     public static void main(String[] args) {
- 
+
         Scanner entrada = new Scanner(System.in);
         String hos;
         String provincia;
@@ -19,16 +19,16 @@ public class Principal {
         int respuesta;
         int respuesta1;
 
-        System.out.println("Ingrese el nombre del Hospital:");
+        System.out.println("Ingrese el nombre del Hospital");
         hos = entrada.nextLine().toUpperCase();
 
-        System.out.println("Ingrese la direccion del Hospital:");
+        System.out.println("Ingrese la direccion del Hospital");
         direccion = entrada.nextLine();
 
-        System.out.println("Ingrese la ciudad del Hospital:");
+        System.out.println("Ingrese la ciudad del Hospital");
         ciudad = entrada.nextLine();
 
-        System.out.println("Ingrese la provincia del Hospital:");
+        System.out.println("Ingrese la provincia del Hospital");
         provincia = entrada.nextLine();
 
         CiudadHospital city = new CiudadHospital(direccion, ciudad, provincia);
@@ -46,13 +46,13 @@ public class Principal {
 
         for (int i = 0; i < respuesta; i++) {
 
-            System.out.println("Ingrese el nombre del medico:");
+            System.out.println("Ingrese el nombre del medico");
             nomMed[i] = entrada.nextLine();
 
-            System.out.println("Ingrese la especialidad:");
+            System.out.println("Ingrese la especialidad");
             especialidad[i] = entrada.nextLine();
 
-            System.out.println("Ingrese el sueldo del medico:");
+            System.out.println("Ingrese el sueldo del medico");
             sueldo[i] = entrada.nextDouble();
             entrada.nextLine();
         }
@@ -66,13 +66,13 @@ public class Principal {
         entrada.nextLine();
         for (int i = 0; i < respuesta1; i++) {
 
-            System.out.println("Ingrese el nombre del Enfermero:");
+            System.out.println("Ingrese el nombre del Enfermero");
             nomEnf[i] = entrada.nextLine();
 
-            System.out.println("Ingrese el tipo de contrato (contratado o nombramiento):");
+            System.out.println("Ingrese el tipo de contrato (contrato o nombramiento)");
             tipoCont[i] = entrada.nextLine();
 
-            System.out.println("Ingrese el sueldo del enfermero:");
+            System.out.println("Ingrese el sueldo del enfermero");
             sueldo1[i] = entrada.nextDouble();
             entrada.nextLine();
         }
